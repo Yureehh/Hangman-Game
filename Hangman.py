@@ -87,10 +87,7 @@ def tryLetter(word, guessedLetters):
     return spacedWord, check
 
 def hang(guess):
-    if guess in word:
-        return True
-    else:
-        return False
+    return guess in word
 
 def updateWord(word):
     wordToGuessLabel.configure(text = word)
